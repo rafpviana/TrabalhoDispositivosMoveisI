@@ -6,7 +6,6 @@
     android:layout_height="match_parent"
     tools:context="com.trabalhodispositivosmoveisi.TelaEditarPerfilActivity"
     android:orientation="vertical"
-    android:background=" #00ff00"
     android:gravity="center">
 
     <ImageView
