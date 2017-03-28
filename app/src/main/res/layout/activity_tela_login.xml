@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     android:background="@android:color/background_light"
     android:gravity="center"
+    android:backgroundTint="#00ffff"
     tools:context="com.trabalhodispositivosmoveisi.TelaLoginActivity"
     android:orientation="vertical">
 
@@ -42,6 +43,7 @@
         android:layout_marginRight="100dp"
         android:layout_marginTop="10dp"
         android:text="Login"
+        android:background=" #00cc00"
         android:textAllCaps="false" />
 
     <TextView

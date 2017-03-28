@@ -5,6 +5,7 @@
     android:layout_height="match_parent"
     android:background="@android:color/background_light"
     android:gravity="center"
+    android:backgroundTint="#00ffff"
     android:orientation="vertical"
     tools:context="com.trabalhodispositivosmoveisi.TelaCadastroActivity">
 
@@ -57,7 +58,8 @@
         android:layout_marginLeft="100dp"
         android:layout_marginRight="100dp"
         android:layout_marginTop="10dp"
-        android:text="Registrar"
+    android:background="#00cc00"
+    android:text="Registrar"
         android:textAllCaps="false" />
 
     <Button
@@ -68,6 +70,7 @@
         android:layout_marginLeft="100dp"
         android:layout_marginRight="100dp"
         android:layout_marginTop="10dp"
+        android:background="#00cc00"
         android:text="Cancelar"
         android:textAllCaps="false" />
 
