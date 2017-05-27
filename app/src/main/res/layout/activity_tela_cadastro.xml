@@ -57,7 +57,7 @@
         android:layout_marginLeft="100dp"
         android:layout_marginRight="100dp"
         android:layout_marginTop="10dp"
-    android:text="Registrar"
+        android:text="Cadastrar"
         android:textAllCaps="false" />
 
     <Button

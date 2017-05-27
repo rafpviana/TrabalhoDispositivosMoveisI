@@ -10,19 +10,19 @@
     android:orientation="vertical">
 
     <EditText
-        android:id="@+id/editTextLoginEmailOuUsuario"
+        android:id="@+id/edittext_login_email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="10dp"
         android:layout_marginLeft="50dp"
         android:layout_marginRight="50dp"
         android:layout_marginTop="10dp"
-        android:hint="Email ou Usuário"
+        android:hint="Email"
         android:textAlignment="center"
         android:textColor="@android:color/black" />
 
     <EditText
-        android:id="@+id/editTextLoginSenha"
+        android:id="@+id/edittext_login_senha"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="10dp"
@@ -34,7 +34,7 @@
         android:textColor="@android:color/black" />
 
     <Button
-        android:id="@+id/buttonLogin"
+        android:id="@+id/button_login"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="10dp"
@@ -45,14 +45,14 @@
         android:textAllCaps="false" />
 
     <TextView
-        android:id="@+id/textViewCriarConta"
+        android:id="@+id/textview_criar_conta"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="10dp"
         android:layout_marginLeft="100dp"
         android:layout_marginRight="100dp"
         android:layout_marginTop="10dp"
-        android:text="Não tem uma conta? Crie."
+        android:text="Não tem conta? Crie uma!"
         android:textAlignment="center"
         android:textColor="@android:color/black" />
 

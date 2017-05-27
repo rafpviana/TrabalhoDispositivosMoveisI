@@ -12,6 +12,7 @@ public class TelaCadastroActivity extends AppCompatActivity {
     private EditText idCadastroSenha;
     private Button idCadastro;
     private Button idCancelar;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

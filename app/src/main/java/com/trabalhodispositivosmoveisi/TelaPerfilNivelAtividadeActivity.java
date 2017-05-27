@@ -20,6 +20,8 @@ public class TelaPerfilNivelAtividadeActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent myIntent = new Intent(TelaPerfilNivelAtividadeActivity.this, TelaPerfilActivity.class);
+                myIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
+                finish();
                 startActivity(myIntent);
             }
         });

@@ -40,6 +40,8 @@ public class TelaPerfilActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent i3 = new Intent(TelaPerfilActivity.this, TelaLoginActivity.class);
+                i3.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
+                finish();
                 startActivity(i3);
             }
         });
