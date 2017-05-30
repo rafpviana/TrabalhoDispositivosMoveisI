@@ -1,5 +1,6 @@
 package com.trabalhodispositivosmoveisi;
 
+import java.io.Serializable;
 import java.util.Date;
 
 import io.realm.RealmObject;
@@ -8,43 +9,42 @@ import io.realm.RealmObject;
  * Created by rafael on 27/05/2017.
  */
 
-public class Usuario extends RealmObject{
-
-    private static int newId = 1;
+public class Usuario extends RealmObject implements Serializable{
 
     private int id;
-    private String name;
+    private String nome;
     private String email;
-    private String password;
-    private String birthday;
-    private String gender;
-    private float heigh;
-    private float weigh;
-    private int activityLevel;
-
-    public Usuario(String name, String email, String password, String birthday, String gender, float heigh, float weigh, int activityLevel) {
-
-        this.id = this.newId;
-        this.newId++;
-
-        this.name = name;
-        this.email = email;
-        this.password = password;
-        this.birthday = birthday;
-        this.gender = gender;
-        this.heigh = heigh;
-        this.weigh = weigh;
-        this.activityLevel = activityLevel;
-    }
+    private String senha;
+    private int idade;
+    private String genero;
+    private float altura;
+    private float peso;
+    private int nivelAtividade;
+    private boolean logado;
 
     public Usuario() {}
 
-    public String getName() {
-        return name;
+    public Usuario(int id, String nome, String email, String senha, int idade, String genero, float altura, float peso, int nivelAtividade, boolean logado) {
+
+        this.id = id;
+        this.nome = nome;
+        this.email = email;
+        this.senha = senha;
+        this.idade = idade;
+        this.genero = genero;
+        this.altura = altura;
+        this.peso = peso;
+        this.nivelAtividade = nivelAtividade;
+        this.logado = logado;
     }
 
-    public void setName(String name) {
-        this.name = name;
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
     }
 
     public String getEmail() {
@@ -55,55 +55,67 @@ public class Usuario extends RealmObject{
         this.email = email;
     }
 
-    public String getPassword() {
-        return password;
+    public String getSenha() {
+        return senha;
     }
 
-    public void setPassword(String password) {
-        this.password = password;
+    public void setSenha(String senha) {
+        this.senha = senha;
     }
 
-    public String getBirthday() {
-        return birthday;
+    public int getIdade() {
+        return idade;
     }
 
-    public void setBirthday(String birthday) {
-        this.birthday = birthday;
+    public void setIdade(int idade) {
+        this.idade = idade;
     }
 
-    public String getGender() {
-        return gender;
+    public String getGenero() {
+        return genero;
     }
 
-    public void setGender(String gender) {
-        this.gender = gender;
+    public void setGenero(String genero) {
+        this.genero = genero;
     }
 
-    public float getHeigh() {
-        return heigh;
+    public float getAltura() {
+        return altura;
     }
 
-    public void setHeigh(float heigh) {
-        this.heigh = heigh;
+    public void setAltura(float altura) {
+        this.altura = altura;
     }
 
-    public float getWeigh() {
-        return weigh;
+    public float getPeso() {
+        return peso;
     }
 
-    public void setWeigh(float weigh) {
-        this.weigh = weigh;
+    public void setPeso(float peso) {
+        this.peso = peso;
     }
 
-    public int getActivityLevel() {
-        return activityLevel;
+    public int getNivelAtividade() {
+        return nivelAtividade;
     }
 
-    public void setActivityLevel(int activityLevel) {
-        this.activityLevel = activityLevel;
+    public void setNivelAtividade(int nivelAtividade) {
+        this.nivelAtividade = nivelAtividade;
+    }
+
+    public boolean isLogado() {
+        return logado;
+    }
+
+    public void setLogado(boolean logado) {
+        this.logado = logado;
     }
 
     public int getId() {
         return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 }
