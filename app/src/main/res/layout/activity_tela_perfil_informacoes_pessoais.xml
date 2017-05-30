@@ -9,7 +9,7 @@
     android:gravity="center">
 
     <ImageView
-        android:id="@+id/imagemFoto"
+        android:id="@+id/imageview_cadastro_foto_perfil_1"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_marginBottom="10dp"
@@ -17,7 +17,7 @@
         app:srcCompat="@android:color/black" />
 
     <EditText
-        android:id="@+id/textoEditavelNome"
+        android:id="@+id/edittext_cadastro_nome"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="10dp"
@@ -30,40 +30,38 @@
         android:textColor="@android:color/black" />
 
     <EditText
-        android:id="@+id/textoEditavelGenero"
+        android:id="@+id/edittext_cadastro_genero"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="10dp"
         android:layout_marginLeft="50dp"
         android:layout_marginRight="50dp"
         android:layout_marginTop="10dp"
-        android:ems="10"
         android:hint="Gênero"
         android:inputType="textPersonName"
         android:textAlignment="center"
         android:textColor="@android:color/black" />
 
     <EditText
-        android:id="@+id/textoEditavelDataNascimento"
+        android:id="@+id/edittext_cadastro_idade"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="10dp"
         android:layout_marginLeft="50dp"
         android:layout_marginRight="50dp"
         android:layout_marginTop="10dp"
-        android:ems="10"
-        android:hint="Data de nascimento"
-        android:inputType="date"
+        android:hint="Idade"
+        android:inputType="number"
         android:textAlignment="center"
         android:textColor="@android:color/black" />
 
     <Button
-        android:id="@+id/botaoAvancar"
+        android:id="@+id/button_cadastro_avancar_1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="10dp"
-        android:layout_marginLeft="100dp"
-        android:layout_marginRight="100dp"
+        android:layout_marginLeft="75dp"
+        android:layout_marginRight="75dp"
         android:layout_marginTop="10dp"
         android:text="Avançar"
         android:textAllCaps="false"
