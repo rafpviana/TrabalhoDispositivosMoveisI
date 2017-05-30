@@ -9,7 +9,7 @@
     android:gravity="center">
 
     <ImageView
-        android:id="@+id/image_view_Foto"
+        android:id="@+id/imageview_foto_perfil"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_marginBottom="10dp"
@@ -17,7 +17,7 @@
         app:srcCompat="@android:color/black" />
 
     <TextView
-        android:id="@+id/text_view_nome"
+        android:id="@+id/textview_perfil_nome"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="10dp"
@@ -26,19 +26,8 @@
         android:layout_marginTop="10dp"
         android:text="Nome Informado"
         android:textAlignment="center"
-        android:textColor="@android:color/black" />
-
-    <TextView
-        android:id="@+id/text_view_data_nascimento"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp"
-        android:layout_marginLeft="50dp"
-        android:layout_marginRight="50dp"
-        android:layout_marginTop="10dp"
-        android:text="Data de nascimento informada"
-        android:textAlignment="center"
-        android:textColor="@android:color/black" />
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -50,26 +39,28 @@
         android:orientation="horizontal">
 
         <TextView
-            android:id="@+id/text_view_altura"
+            android:id="@+id/textview_perfil_altura"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="Altura informada"
             android:textAlignment="center"
-            android:textColor="@android:color/black" />
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
 
         <TextView
-            android:id="@+id/text_view_peso"
+            android:id="@+id/textview_perfil_peso"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="Peso informado"
             android:textAlignment="center"
-            android:textColor="@android:color/black" />
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
     </LinearLayout>
 
     <TextView
-        android:id="@+id/text_view_nivel"
+        android:id="@+id/textview_perfil_nivel_atividade"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="10dp"
@@ -79,12 +70,13 @@
         android:text="Nível informado"
         android:textAlignment="center"
         android:textColor="@android:color/black"
+        android:textSize="18sp"
         android:textStyle="bold" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp"
+        android:layout_marginBottom="2dp"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:layout_marginTop="10dp"
