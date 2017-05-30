@@ -5,16 +5,51 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.trabalhodispositivosmoveisi.TelaMinhasAtividadesActivity"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:gravity="center">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="match_parent"
+    <LinearLayout
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="20dp"
-        android:text="Aqui serão listadas as atividades e exemplos de exercícios para o usuário"
-        android:textAlignment="center"
-        android:textColor="@android:color/black"
-        android:textSize="18sp"
-        android:textStyle="bold" />
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/imagebutton_alarme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/alarm_icon_80_x_80" />
+
+        <ImageButton
+            android:id="@+id/imagebutton_abdomen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/abdomen_icon_80_x_80" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/imagebutton_perna"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/leg_icon_80_80" />
+
+        <ImageButton
+            android:id="@+id/imagebutton_peitoral"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/chest_icon_80_x_80" />
+    </LinearLayout>
+
 </LinearLayout>
