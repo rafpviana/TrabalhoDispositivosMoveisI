@@ -13,7 +13,7 @@ import io.realm.Realm;
 
 public class TelaPerfilActivity extends AppCompatActivity {
 
-    private ImageView imageViewFotoPerfil;
+    //private ImageView imageViewFotoPerfil;
     private TextView textViewPerfilNome, textViewPerfilPeso, textViewPerfilAltura, textViewPerfilNivelAtividade;
     private Button buttonMinhasAtividades, buttonEditarPerfil, buttonLogout;
     private Usuario usuario;
@@ -53,7 +53,7 @@ public class TelaPerfilActivity extends AppCompatActivity {
     }
 
     private void encontrarViews(){
-        imageViewFotoPerfil = (ImageView)findViewById(R.id.imageview_foto_perfil);
+        //imageViewFotoPerfil = (ImageView)findViewById(R.id.imageview_foto_perfil);
         textViewPerfilNome = (TextView) findViewById(R.id.textview_perfil_nome);
         textViewPerfilPeso = (TextView) findViewById(R.id.textview_perfil_peso);
         textViewPerfilAltura = (TextView) findViewById(R.id.textview_perfil_altura);
@@ -83,8 +83,9 @@ public class TelaPerfilActivity extends AppCompatActivity {
         buttonMinhasAtividades.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i1 = new Intent(TelaPerfilActivity.this, TelaMinhasAtividadesActivity.class);
-                startActivity(i1);
+                Intent intentParaTelaMinhasAtividadesActivity = new Intent(TelaPerfilActivity.this, TelaMinhasAtividadesActivity.class);
+                intentParaTelaMinhasAtividadesActivity.putExtra("nivelAtividade", usuario.getNivelAtividade());
+                startActivity(intentParaTelaMinhasAtividadesActivity);
             }
         });
     }
@@ -93,9 +94,9 @@ public class TelaPerfilActivity extends AppCompatActivity {
         buttonEditarPerfil.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intentParaTelaEditarPerfil = new Intent(TelaPerfilActivity.this, TelaEditarPerfilActivity.class);
-                intentParaTelaEditarPerfil.putExtra("idUsuario", usuario.getId());
-                startActivity(intentParaTelaEditarPerfil);
+                Intent intentParaTelaEditarPerfilActivity = new Intent(TelaPerfilActivity.this, TelaEditarPerfilActivity.class);
+                intentParaTelaEditarPerfilActivity.putExtra("idUsuario", usuario.getId());
+                startActivity(intentParaTelaEditarPerfilActivity);
             }
         });
     }

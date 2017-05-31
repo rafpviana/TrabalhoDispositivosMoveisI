@@ -14,7 +14,7 @@
         android:layout_height="100dp"
         android:layout_marginBottom="10dp"
         android:layout_marginTop="10dp"
-        app:srcCompat="@android:color/black" />
+        android:background="@drawable/avatar_icon_100_x_100" />
 
     <TextView
         android:id="@+id/textview_perfil_nome"
