@@ -9,20 +9,21 @@
     tools:context="com.trabalhodispositivosmoveisi.TelaCadastroActivity">
 
     <EditText
-        android:id="@+id/editTextCadastroEmailOuUsuario"
+        android:id="@+id/edittext_cadastro_email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="10dp"
         android:layout_marginLeft="50dp"
         android:layout_marginRight="50dp"
         android:layout_marginTop="10dp"
-        android:hint="Email ou Usuário"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
         android:textAlignment="center"
         android:textColor="@android:color/black" />
 
 
     <EditText
-        android:id="@+id/editTextCdastroSenha"
+        android:id="@+id/edittext_cadastro_senha"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="10dp"
@@ -36,7 +37,7 @@
         android:textColor="@android:color/black" />
 
     <EditText
-        android:id="@+id/editTextCadastroConfirmarSenha"
+        android:id="@+id/editext_cadastro_confirmacao_senha"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="10dp"
@@ -50,23 +51,23 @@
         android:textColor="@android:color/black" />
 
     <Button
-        android:id="@+id/idCadastro"
+        android:id="@+id/button_cadastrar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="10dp"
-        android:layout_marginLeft="100dp"
-        android:layout_marginRight="100dp"
+        android:layout_marginLeft="75dp"
+        android:layout_marginRight="75dp"
         android:layout_marginTop="10dp"
         android:text="Cadastrar"
         android:textAllCaps="false" />
 
     <Button
-        android:id="@+id/buttonCancelar"
+        android:id="@+id/button_cancelar_cadastro"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="10dp"
-        android:layout_marginLeft="100dp"
-        android:layout_marginRight="100dp"
+        android:layout_marginLeft="75dp"
+        android:layout_marginRight="75dp"
         android:layout_marginTop="10dp"
         android:text="Cancelar"
         android:textAllCaps="false" />

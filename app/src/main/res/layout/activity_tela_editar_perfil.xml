@@ -5,143 +5,183 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.trabalhodispositivosmoveisi.TelaEditarPerfilActivity"
-    android:orientation="vertical"
-    android:gravity="center">
-
-    <ImageView
-        android:id="@+id/imageViewEditFoto"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        app:srcCompat="@android:color/black" />
+    android:gravity="center"
+    android:orientation="vertical">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="2.5"
         android:orientation="horizontal">
 
-        <EditText
-            android:id="@+id/editTextEditDataNascimento"
+        <ImageView
+            android:id="@+id/imageview_editar_foto_perfil"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/avatar_icon_100_x_100" />
+
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:text="Name"
-            android:textAlignment="center" />
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical">
 
-        <EditText
-            android:id="@+id/editTextEditNome"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:inputType="textPersonName"
-            android:text="Nascimento"
-            android:textAlignment="center" />
+            <EditText
+                android:id="@+id/edittext_editar_nome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="textPersonName"
+                android:text="Nome"
+                android:textAlignment="center" />
 
-        <EditText
-            android:id="@+id/editTextEditGenero"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:inputType="textPersonName"
-            android:text="Gênero"
-            android:textAlignment="center" />
+            <EditText
+                android:id="@+id/edittext_editar_genero"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="textPersonName"
+                android:text="Gênero"
+                android:textAlignment="center" />
 
+            <EditText
+                android:id="@+id/edittext_editar_idade"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="number"
+                android:text="Idade"
+                android:textAlignment="center" />
+
+        </LinearLayout>
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-        <EditText
-            android:id="@+id/editTextEditAltura"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:text="Altura"
-            android:textAlignment="center" />
-
-        <EditText
-            android:id="@+id/editTextEditPeso"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:text="Peso"
-            android:textAlignment="center" />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
         android:orientation="vertical">
 
-        <EditText
-            android:id="@+id/editTextEditEmailOuUsuario"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_weight="1"
-            android:inputType="textPersonName"
-            android:text="Email ou Senha"
-            android:textAlignment="center" />
+            android:orientation="vertical">
 
-        <EditText
-            android:id="@+id/editTextEditAntigaSenha"
+            <Spinner
+                android:id="@+id/spinner_nivel_atividade"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="50dp"
+                android:layout_marginStart="50dp"
+                android:layout_weight="1"
+                android:entries="@array/activity_level_array"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:textAlignment="center" />
+
+            <EditText
+                android:id="@+id/edittext_editar_peso"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="50dp"
+                android:layout_marginStart="50dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="number|numberDecimal"
+                android:text="Peso"
+                android:textAlignment="center" />
+
+            <EditText
+                android:id="@+id/edittext_editar_altura"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="50dp"
+                android:layout_marginStart="50dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="number|numberDecimal"
+                android:text="Altura"
+                android:textAlignment="center" />
+
+            <EditText
+                android:id="@+id/edittext_editar_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="50dp"
+                android:layout_marginStart="50dp"
+                android:layout_weight="1"
+                android:inputType="textEmailAddress"
+                android:text="Email"
+                android:textAlignment="center" />
+
+            <EditText
+                android:id="@+id/edittext_editar_antiga_senha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="50dp"
+                android:layout_marginStart="50dp"
+                android:layout_weight="1"
+                android:hint="Antiga Senha"
+                android:inputType="textPassword"
+                android:textAlignment="center" />
+
+            <EditText
+                android:id="@+id/edittext_editar_nova_senha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="50dp"
+                android:layout_marginStart="50dp"
+                android:layout_weight="1"
+                android:hint="Nova Senha"
+                android:inputType="textPassword"
+                android:textAlignment="center" />
+
+            <EditText
+                android:id="@+id/edittext_editar_confirmar_nova_senha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="50dp"
+                android:layout_marginStart="50dp"
+                android:layout_weight="1"
+                android:hint="Confirmar Nova Senha"
+                android:inputType="textPassword"
+                android:textAlignment="center" />
+
+        </LinearLayout>
+
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:ems="10"
-            android:hint="Antiga Senha"
-            android:inputType="textPersonName"
-            android:textAlignment="center" />
+            android:layout_height="match_parent"
+            android:layout_marginBottom="2dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_weight="5"
+            android:orientation="horizontal">
 
-        <EditText
-            android:id="@+id/editTextEditNovaSenha"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:ems="10"
-            android:hint="Nova Senha"
-            android:inputType="textPersonName"
-            android:textAlignment="center" />
+            <Button
+                android:id="@+id/button_editar_cancelar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Cancelar"
+                android:textAllCaps="false" />
 
-        <EditText
-            android:id="@+id/editTextEditConfirmarNovaSenha"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:ems="10"
-            android:hint="Confirmar Senha"
-            android:inputType="textPersonName"
-            android:textAlignment="center" />
+            <Button
+                android:id="@+id/button_editar_salvar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Salvar"
+                android:textAllCaps="false" />
 
-    </LinearLayout>
+        </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-        <Button
-            android:id="@+id/buttonEditCancelar"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Cancelar"
-            android:textAllCaps="false" />
-
-        <Button
-            android:id="@+id/buttonEditSalvar"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Salvar"
-            android:textAllCaps="false" />
     </LinearLayout>
 
 </LinearLayout>
