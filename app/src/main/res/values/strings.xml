@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">TrabalhoDispositivosMoveisI</string>
+
+    <string-array name="activity_level_array">
+        <item>Atividade Leve</item>
+        <item>Atividade Moderada</item>
+        <item>Atividade Intensa</item>
+    </string-array>
 </resources>
