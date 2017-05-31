@@ -1,17 +1,17 @@
 package com.trabalhodispositivosmoveisi;
 
-        import android.content.Intent;
-        import android.support.v7.app.AppCompatActivity;
-        import android.os.Bundle;
-        import android.view.View;
-        import android.widget.Button;
-        import android.widget.EditText;
-        import android.widget.ImageView;
-        import android.widget.Toast;
+import android.content.Intent;
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.ImageView;
+import android.widget.Toast;
 
 public class TelaPerfilInformacoesPessoaisActivity extends AppCompatActivity {
 
-    private ImageView imageViewCadastroFotoPerfil;
+    //private ImageView imageViewCadastroFotoPerfil;
     private EditText editTextCadastroNome, edittextCadastroGenero, editTextCadastroIdade;
     private Button buttonCadastroAvancar;
     private Usuario usuario;
@@ -33,7 +33,7 @@ public class TelaPerfilInformacoesPessoaisActivity extends AppCompatActivity {
     }
 
     private void encontrarViews() {
-        imageViewCadastroFotoPerfil = (ImageView) findViewById(R.id.imageview_cadastro_foto_perfil_1);
+        //imageViewCadastroFotoPerfil = (ImageView) findViewById(R.id.imageview_cadastro_foto_perfil_1);
         editTextCadastroNome = (EditText) findViewById(R.id.edittext_cadastro_nome);
         edittextCadastroGenero = (EditText) findViewById(R.id.edittext_cadastro_genero);
         editTextCadastroIdade = (EditText) findViewById(R.id.edittext_cadastro_idade);

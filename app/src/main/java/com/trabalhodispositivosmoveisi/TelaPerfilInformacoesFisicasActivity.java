@@ -1,20 +1,21 @@
 package com.trabalhodispositivosmoveisi;
 
-        import android.content.Intent;
-        import android.support.v7.app.AppCompatActivity;
-        import android.os.Bundle;
-        import android.view.View;
-        import android.widget.Button;
-        import android.widget.EditText;
-        import android.widget.ImageView;
-        import android.widget.TextView;
-        import android.widget.Toast;
 
-        import org.w3c.dom.Text;
+             import android.content.Intent;
+             import android.support.v7.app.AppCompatActivity;
+             import android.os.Bundle;
+             import android.view.View;
+             import android.widget.Button;
+             import android.widget.EditText;
+             import android.widget.ImageView;
+             import android.widget.TextView;
+             import android.widget.Toast;
+
+             import org.w3c.dom.Text;
 
 public class TelaPerfilInformacoesFisicasActivity extends AppCompatActivity {
 
-    private ImageView imageViewCadastroFotoPerfil;
+    //private ImageView imageViewCadastroFotoPerfil;
     private TextView textViewCadastroNome, textViewCadastroGenero, textViewCadastroIdade;
     private EditText editTextCadastroPeso, editTextCadastroAltura;
     private Button buttonCadastroAvancar;
@@ -39,7 +40,7 @@ public class TelaPerfilInformacoesFisicasActivity extends AppCompatActivity {
     }
 
     private void encontrarViews() {
-        imageViewCadastroFotoPerfil = (ImageView) findViewById(R.id.imageview_cadastro_foto_perfil_2);
+        //imageViewCadastroFotoPerfil = (ImageView) findViewById(R.id.imageview_cadastro_foto_perfil_2);
         textViewCadastroNome = (TextView) findViewById(R.id.textview_cadastro_nome_1);
         textViewCadastroGenero = (TextView) findViewById(R.id.textview_cadastro_genero_1);
         textViewCadastroIdade = (TextView) findViewById(R.id.textview_cadastro_idade_1);
