@@ -17,7 +17,7 @@ import io.realm.RealmResults;
 public class TelaPerfilNivelAtividadeActivity extends AppCompatActivity {
 
 
-    private ImageView imageViewCdastroFotoPerfil;
+    //private ImageView imageViewCdastroFotoPerfil;
     private TextView textViewCadastroNome, textViewCadastroGenero, textViewCadastroIdade;
     private Button buttonCadastroAvancar;
     private RadioButton radioButtonOpcao1, radioButtonOpcao2, radioButtonOpcao3;
@@ -47,7 +47,7 @@ public class TelaPerfilNivelAtividadeActivity extends AppCompatActivity {
     }
 
     private void encontrarView(){
-        imageViewCdastroFotoPerfil = (ImageView) findViewById(R.id.imageview_cadastro_foto_perfil_3);
+        //imageViewCdastroFotoPerfil = (ImageView) findViewById(R.id.imageview_cadastro_foto_perfil_3);
         textViewCadastroNome = (TextView) findViewById(R.id.textview_cadastro_nome_2);
         textViewCadastroGenero = (TextView) findViewById(R.id.textview_cadastro_genero_2);
         textViewCadastroIdade = (TextView) findViewById(R.id.textview_cadastro_idade_2);

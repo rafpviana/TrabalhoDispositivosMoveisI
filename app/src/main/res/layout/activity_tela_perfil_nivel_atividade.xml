@@ -20,7 +20,7 @@
             android:layout_marginStart="20dp"
             android:layout_marginTop="20dp"
             android:layout_weight="1"
-            app:srcCompat="@android:color/black" />
+            android:background="@drawable/avatar_icon_100_x_100" />
 
         <LinearLayout
             android:layout_width="wrap_content"
